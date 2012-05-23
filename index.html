@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>jquery Autre planete qrcode Generator</title>
+	<script src="js/libs/jquery.js"></script>
+	<script type="text/javascript" src="src/qrcode.js"></script>
+    <script type="text/javascript" src="src/jquery.ap.qrcode.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        
+        $('#qrcode').qrcode("http://www.autreplanete.com");
+        $('#qrcodeGif').qrcode("gif", "http://www.autreplanete.com");
+        $('#qrcodeCanvas').qrcode("canvas", "http://www.autreplanete.com");
+        $('#qrcodeTable').qrcode("table", "http://www.autreplanete.com");
+        $('#qrcodeDiv').qrcode("div", "http://www.autreplanete.com");
+        
+        /**
+         * fix for IE7
+         */
+        /*
+        var img = $('#qrcodeGif').find('img').get(0);
+        var fixBase64 = function(img) {
+            var BASE64_DATA = /^data:.*;base64/i;
+            var base64Path = base64.php;
+            img.runtimeStyle.behavior = "none";
+            if (BASE64_DATA.test(img.src)) {
+              img.src = base64Path + "?" + img.src.slice(5);
+            }
+        };
+        if(img.runtimeStyle) {
+            fixBase64(img);
+        }
+        */
+        
+    });
+    </script>
+</head>
+<body>
+<h1>Jquery Autre planete Qrcode Plugin</h1>
+<h2>How to Use It</h2>
+
+<p>First include jquery.js, qrcode.js and jquery.ap.qrcode.js in your webpage with script tag</p>
+
+<pre><code>
+&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="qrcode.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.ap.qrcode.js"&gt;&lt;/script&gt;
+</code>
+</pre>
+
+<p>Then create a DOM element contains the generated qrcode</p>
+<pre><code>
+    &lt;div id="qrcode"&gt;&lt;/div&gt;
+</code>
+</pre>
+
+<p>Add the qrcode in this container</p>
+<pre><code>
+    $('#qrcode').qrcode("http://www.autreplanete.com");
+</code>
+</pre>
+
+There is a Cool Online qr code generator <a href='http://www.autreplanete.com/qrcode-generator/' title="autre planete qrcode generator">Online qrcode generator</a>.
+
+<h2>Exemple</h2>
+
+<div>
+    <h3>Simple example</h3>
+    <p>Add the qrcode in &lt;div id="qrcode"&gt;&lt;/div&gt; container</p>
+    <pre><code>
+    $('#qrcode').qrcode("http://www.autreplanete.com");
+    </code>
+    </pre>
+    <div id="qrcode"></div>
+</div>
+
+<div>
+    <h3>gif qrcode</h3>
+    <p>Add the qrcode in &lt;div id="qrcodeGif"&gt;&lt;/div&gt; container</p>
+    <pre><code>
+    $('#qrcodeGif').qrcode("gif", "http://www.autreplanete.com");
+    </code>
+    </pre>
+    <div id="qrcodeGif"></div>
+</div>
+
+
+<div>
+    <h3>Html 5 Canvas qrcode</h3>
+    <p>Add the qrcode in &lt;div id="qrcodeCanvas"&gt;&lt;/div&gt; container</p>
+    <pre><code>
+    $('#qrcodeCanvas').qrcode("canvas", "http://www.autreplanete.com");
+    </code>
+    </pre>
+    <div id="qrcodeCanvas"></div>
+</div>
+
+<div>
+    <h3>Html Table qrcode</h3>
+    <p>Add the qrcode in &lt;div id="qrcodeTable"&gt;&lt;/div&gt; container</p>
+    <pre><code>
+    $('#qrcodeTable').qrcode("table", "http://www.autreplanete.com");
+    </code>
+    </pre>
+    <div id="qrcodeTable"></div>
+</div>
+
+<div>
+    <h3>Html Div qrcode</h3>
+    <p>Add the qrcode in &lt;div id="qrcodeDiv"&gt;&lt;/div&gt; container</p>
+    <pre><code>
+    $('#qrcodeDiv').qrcode("div", "http://www.autreplanete.com");
+    </code>
+    </pre>
+    <div id="qrcodeDiv"></div>
+</div>
+
+
+<div>
+<p>"QR Code™" is registered trademark of <a href="http://www.denso-wave.com/en/adcd/">DENSO WAVE</a> INCORPORATED</p>
+<p>QR Code™ javascript (qrcode.js) Copyright (c) 2009 Kazuhiko Arase</p>
+</div>
+
+</body>
+</html>
