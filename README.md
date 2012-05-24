@@ -10,7 +10,9 @@ It is based on a <a href='http://www.d-project.com/qrcode/index.html'>library</a
 <a href='http://thierryc.github.com/jquery.ap.qrcode'>jquery.ap.qrcode.js</a> wraps
 it to make it easy to include in your own site or services.
 
-Here is a <a href='index.html'>howto use jquery qrcode generator</a>
+Here is a <a href="http://www.autreplanete.com/qrcode-generator/demo.html">Howto use jquery QRcode generator Plugin</a>
+
+GUI <a href="http://www.autreplanete.com/qrcode-generator/index.html">Demo jquery qrcode generator</a>
 
 ## How to Use It
 
@@ -29,7 +31,7 @@ Add the qrcode in this container
 
     $('#qrcode').qrcode("I'm sorry Dave, I'm afraid I can't do that !");
 
-There is a Cool Online qr code generator <a href='http://www.autreplanete.com/qrcode-generator/' title="autre planete qrcode generator">Online qrcode generator</a>.
+There is a Cool Online qr code generator <a href="http://www.autreplanete.com/qrcode-generator/" title="autre planete qrcode generator">Online qrcode generator</a>.
 
 
 ## More
